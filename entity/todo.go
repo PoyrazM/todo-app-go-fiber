@@ -1,0 +1,11 @@
+package entity
+
+import (
+	"go.mongodb.org/mongo-driver/bson/primitive"
+)
+
+type Todo struct {
+	RequestId primitive.ObjectID `json:"request_id,omitempty"`
+	Title     string             `json:"title,omitempty"`
+	Content   string             `json:"content,omitempty"`
+}
